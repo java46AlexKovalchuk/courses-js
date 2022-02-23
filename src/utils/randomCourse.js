@@ -2,7 +2,7 @@ import { createCourse } from "../models/course";
 import { getRandomDate, getRandomElement, getRandomNumber } from "./random";
 export function getRandomCourse(courseData){
     ///
-    let id = getRandomNumber(courseData["minId"], courseData["maxid"]);
+    let id = getRandomNumber(courseData["minId"], courseData["maxId"]);
     let name = getRandomElement(courseData["courses"]);
     let lecturer = getRandomElement(courseData["lectors"]);
     let hours = getRandomNumber(courseData["minHours"], courseData["maxHours"]);
